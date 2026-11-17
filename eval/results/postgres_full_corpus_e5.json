@@ -1,0 +1,32 @@
+{
+  "embedder": "intfloat/multilingual-e5-small",
+  "store": "postgres",
+  "questions": 15,
+  "chunks_indexed": 236,
+  "results": {
+    "lexical": {
+      "recall@1": 0.267,
+      "recall@3": 0.4,
+      "recall@5": 0.4,
+      "mrr": 0.322
+    },
+    "vector": {
+      "recall@1": 0.6,
+      "recall@3": 0.733,
+      "recall@5": 0.733,
+      "mrr": 0.682
+    },
+    "hybrid": {
+      "recall@1": 0.4,
+      "recall@3": 0.667,
+      "recall@5": 0.733,
+      "mrr": 0.521
+    },
+    "hybrid+rerank": {
+      "recall@1": 0.733,
+      "recall@3": 0.8,
+      "recall@5": 0.867,
+      "mrr": 0.769
+    }
+  }
+}
